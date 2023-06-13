@@ -7,7 +7,7 @@ export default function Videos() {
     const {data:videos, isLoading, isError} = useGetVideosQuery();
     let content = null;
     if(isLoading){
-        content = <VideoLoader />
+        content = <><VideoLoader /> <VideoLoader /><VideoLoader /> <VideoLoader /><VideoLoader /> <VideoLoader /><VideoLoader /> <VideoLoader /><VideoLoader /> <VideoLoader /><VideoLoader /> <VideoLoader /></>
     }
     if(!isLoading && isError){
         content = <Error  message="Error" /> 
