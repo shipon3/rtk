@@ -30,7 +30,9 @@ export default function Video() {
                         {content}
                     </div>
 
-                    <RelatedVideos />
+                    {video?.id && (
+                        <RelatedVideos id={video.id} title={video.title} />
+                    )}
                 </div>
             </div>
         </section>
